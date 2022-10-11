@@ -291,8 +291,7 @@ squared-Laplacian energy integrated over the domain, we can say that it is
 as-_harmonic_-as-possible. Harmonic functions include constant functions (i.e.,
 translations) but also any displacement that _bends_ in one direction by an
 equal and opposite amount as it bends in the other direction: 
-$\Delta \mathbf{d} = 0 \rightarrow  \partial \mathbf{d}/\partial u
-+ \partial \mathbf{d}/\partial v = 0 \rightarrow  \partial \mathbf{d}/\partial u = -\partial \mathbf{d}/\partial v$.
+$\Delta \mathbf{d} = 0 \rightarrow  \partial \mathbf{d}/\partial u + \partial \mathbf{d}/\partial v = 0 \rightarrow  \partial \mathbf{d}/\partial u = -\partial \mathbf{d}/\partial v$.
 
 To discretize this energy we can make use of our discrete Laplacian operator
 $\mathbf{L}$. This matrix computes the locally _integrated_ Laplacian of a given
