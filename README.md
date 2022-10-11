@@ -343,8 +343,7 @@ separate the knowns and unknowns in the energy:
 
 $$
 \mathop{\text{min}}_{\mathbf{D}_\text{u}}
-\newcommand{\tr}[1]{\mathop{\text{tr}}\left(\right)}
-\tr{(\mathbf{D}_\text{u}^{\mathsf T} \ \mathbf{D}_\text{h}^{\mathsf T})
+\text{tr}{(\mathbf{D}_\text{u}^{\mathsf T} \ \mathbf{D}_\text{h}^{\mathsf T})
 \left(\begin{array}{cc}
 \mathbf{Q}_\text{u,u} & \mathbf{Q}_\text{u,h} \\
 \mathbf{Q}_\text{h,u} & \mathbf{Q}_\text{h,h} 
