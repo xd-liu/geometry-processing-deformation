@@ -275,7 +275,7 @@ Just as we can show that harmonic functions ($\Delta \mathbf{d} = 0$) minimize t
 energy, we can use [calculus of
 variations](https://en.wikipedia.org/wiki/Calculus_of_variations) apply
 [Green's identity](https://en.wikipedia.org/wiki/Green's_identities) _twice_ to
-show that minimizers of the squared-Laplacian energy are _bi-_harmonic
+show that minimizers of the squared-Laplacian energy are _bi-harmonic_
 functions (
   $\Delta \Delta \mathbf{d} = 0$ or $\Delta ^{2}\mathbf{d} = 0$
   ). Obviously all harmonic functions are also
@@ -290,7 +290,8 @@ bi-harmonic function is not so elucidating, but by minimizing the
 squared-Laplacian energy integrated over the domain, we can say that it is
 as-_harmonic_-as-possible. Harmonic functions include constant functions (i.e.,
 translations) but also any displacement that _bends_ in one direction by an
-equal and opposite amount as it bends in the other direction: $\Delta \mathbf{d} = 0 \rightarrow  \partial \mathbf{d}/\partial u
+equal and opposite amount as it bends in the other direction: 
+$\Delta \mathbf{d} = 0 \rightarrow  \partial \mathbf{d}/\partial u
 + \partial \mathbf{d}/\partial v = 0 \rightarrow  \partial \mathbf{d}/\partial u = -\partial \mathbf{d}/\partial v$.
 
 To discretize this energy we can make use of our discrete Laplacian operator
