@@ -182,6 +182,11 @@ We can discretize this over our triangle mesh surface the same way we have in
 smoothing and parameterization assignments:
 
 $$
+\mathop\text{tr}{\left(\mathbf{D}^{\mathsf T} \mathbf{L} \mathbf{D}\right)} \quad \text{subject to } \mathbf{D}\_\text{handles} =
+\mathbf{g}\_\text{handles} - \widetilde{\mathbf{V}}\_\text{handles},
+$$
+
+$$
 \mathop{\text{min}}\_{\mathbf{D}} \mathop\text{tr}{\left(\mathbf{D}^{\mathsf T} \mathbf{L} \mathbf{D}\right)} \quad \text{subject to } \mathbf{D}\_\text{handles} =
 \mathbf{g}\_\text{handles} - \widetilde{\mathbf{V}}\_\text{handles},
 $$
