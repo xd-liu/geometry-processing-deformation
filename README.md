@@ -416,20 +416,20 @@ to apply _locally_ so that parts of the shape can easily rotate.
 
 In the scenario where each handle
 $i$ are perfectly transformed by a [rigid
-transformation](https://en.wikipedia.org/wiki/Rigid_transformation) $\mathbf{x}_i =
-\mathbf{R} \widetilde{\mathbf{x}}_i + \mathbf{t}$, where $\mathbf{R} \in  SO(3) \subset  \mathbb{R}^{3\times 3}$ is a rotation matrix and
+transformation](https://en.wikipedia.org/wiki/Rigid_transformation) $\mathbf{x}\_i =\mathbf{R} \widetilde{\mathbf{x}}\_i + \mathbf{t}$, where $\mathbf{R} \in  SO(3) \subset  \mathbb{R}^{3\times 3}$ is a rotation matrix and
 $\mathbf{t}\in \mathbb{R}^3$ is a translation vector. If an
 [oracle](https://en.wikipedia.org/wiki/Oracle) could only tell us this
 particular rigid transformation then we could repair 
 the gradient-based energy above by pre-rotating the rest shape by this
 transformation:
 
+$$
 \begin{align*}
-\int_{\Omega} \|  {\nabla} \mathbf{x} - {\nabla}(\mathbf{R} \widetilde{\mathbf{x}} + \mathbf{t}) \|^{2} \;dA 
-  &= \int_{\Omega} \|  {\nabla} \mathbf{x} - {\nabla}(\mathbf{R} \widetilde{\mathbf{x}}) - {\nabla}\mathbf{t}\|^{2} \;dA \\
-  &= \int_{\Omega} \|  {\nabla} \mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}} \|^{2} \;dA,
+\int\_{\Omega} \|  {\nabla} \mathbf{x} - {\nabla}(\mathbf{R} \widetilde{\mathbf{x}} + \mathbf{t}) \|^{2} \;dA 
+  &= \int\_{\Omega} \|  {\nabla} \mathbf{x} - {\nabla}(\mathbf{R} \widetilde{\mathbf{x}}) - {\nabla}\mathbf{t}\|^{2} \;dA \\
+  &= \int\_{\Omega} \|  {\nabla} \mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}} \|^{2} \;dA,
 \end{align*}
-
+$$
 
 where the translation vector $\mathbf{t}$ falls out because a translation has constant
 gradient.
