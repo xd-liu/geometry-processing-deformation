@@ -116,7 +116,7 @@ $$
 \text{ subject to } \mathbf{x}(u_i, v_i) = \mathbf{g}_i \ \forall  i = \{1, \ldots  , k\},
 $$
 
-where $\mathbf{g}_i$ is the position of the $i$th control point handle.
+where $\mathbf{g}_i$ is the position of the $i$-th control point handle.
 
 While the constraints are straightforward, we have many choices for how to
 formulate the energy function $E$. A natural choice is to measure distortion in
