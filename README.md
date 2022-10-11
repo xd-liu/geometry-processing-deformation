@@ -648,7 +648,6 @@ $$
 > $$
 \text{tr}{\left(\mathbf{V} \mathbf{K} \mathbf{R}\right)}.
 $$
-
 > 
 > Finally, we can answer what is in each entry $K\_{vw}$, where $v$ chooses the
 > row and $w=3k+{\beta}$ chooses the column of $\mathbf{K}$. Treating our nested summation as
@@ -660,7 +659,7 @@ K\_{i\ 3k+{\beta}} & \mathrel{+}= \widetilde{e}\_{ij}^{\beta}, \\
 K\_{j\ 3k+{\beta}} & \mathrel{+}= -\widetilde{e}\_{ij}^{\beta}, \\
 \end{align*}
 $$
-
+>
 > for each half-edge encountered. 
 
 
