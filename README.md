@@ -649,7 +649,7 @@ $$
 > 
 > Finally, we can answer what is in each entry $K\_{vw}$, where $v$ chooses the
 > row and $w=3k+{\beta}$ chooses the column of $\mathbf{K}$. Treating our nested summation as
-> nested for-loops, we can increment entries in $\mathbf{K}
+> nested for-loops, we can increment entries in $\mathbf{K}$
 > 
 > $$ 
 \begin{align*}
@@ -668,11 +668,10 @@ $$
 Minimizing this energy with respect $\mathbf{R}$ corresponds to minimizing:
 
 $$
-\mathop\text{tr}{\left( \underbrace{\mathbf{V}^{\mathsf T} \mathbf{K}}\_{\mathbf{C}^{\mathsf T}} \mathbf{R} \right)},
+\text{tr}{\left( \underbrace{\mathbf{V}^{\mathsf T} \mathbf{K}}\_{\mathbf{C}^{\mathsf T}} \mathbf{R} \right)},
 $$
 
-where $\mathbf{C} \in  \mathbb{R}^{3n \times  3}$ stacks weighted covariance matrices $\mathbf{C}\_k \in  \mathbb{R}^{3 \times 
-3}$ for each region _covered_ by the corresponding rotation $\mathbf{R}_k$. We have
+where $\mathbf{C} \in  \mathbb{R}^{3n \times  3}$ stacks weighted covariance matrices $\mathbf{C}\_k \in  \mathbb{R}^{3 \times 3}$ for each region _covered_ by the corresponding rotation $\mathbf{R}_k$. We have
 seen this problem before in the registration assignment. For each $\mathbf{C}_k$,
 $\mathbf{R}_k$ will be the closest rotation matrix solved via [singular value
 decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition).
