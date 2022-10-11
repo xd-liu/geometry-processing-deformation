@@ -181,7 +181,11 @@ coordinate function of the displacement field _independently_.
 We can discretize this over our triangle mesh surface the same way we have in
 smoothing and parameterization assignments:
 
-<p align="center"><img src="./tex/a8dde6bf89d57624cd15508bd0cde91d.svg?invert_in_darkmode" align=middle width=420.6178086pt height=26.707794299999996pt/></p>
+$$
+{\text{min}}\_{\mathbf{D}} \\, \text{tr}{\left(\mathbf{D}^{\mathsf T} \mathbf{L} \mathbf{D}\right)} \quad \text{subject to } \mathbf{D}\_\text{handles} =
+\mathbf{g}\_\text{handles} - \widetilde{\mathbf{V}}\_\text{handles},
+$$
+
 
 where the rows of $\mathbf{g}\_\text{handles} \in  \mathbb{R}^{k \times  3}$ contains the new positions
 of the $k$ control point handles.
@@ -682,7 +686,7 @@ Minimizing the energy above with respect to $\mathbf{V}$ corresponds to solving 
 Dirichlet energy-like minimization problem:
 
 $$
-{\text{min}}_\mathbf{V} \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{L} \mathbf{V} \right)} + \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{B} \right)}
+{\text{min}}_\mathbf{V} \\, \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{L} \mathbf{V} \right)} + \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{B} \right)}
 $$
 
 
