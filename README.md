@@ -512,12 +512,13 @@ $$
 where $c_{ij}$ is cotangent of the angle opposite half-edge $ij$.
 
 To inject localized best fit rotations, we will assign an unknown rotation
-matrix $\mathbf{R}_k$ to each vertex $k$ of the mesh and accounts for a third of the
+matrix $\mathbf{R}\_k$ to each vertex $k$ of the mesh and accounts for a third of the
 energy integrated over incident triangles:
+
 $$
-\frac12  \int_{\Omega} \|  {\nabla} \mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}}\|^{2} \;dA = 
-\frac{1}{6} \sum\limits_{k=1}^n \sum\limits_{ ij \in  F(k)} 
-c_{ij} \|  (\mathbf{v}_i-\mathbf{v}_j) - \mathbf{R}_k (\widetilde{\mathbf{v}}_i-\widetilde{\mathbf{v}}_j)\|^{2},
+\frac12  \int\_{\Omega} \|  {\nabla} \mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}}\|^{2} \;dA = 
+\frac{1}{6} \sum\limits\_{k=1}^n \sum\limits\_{ ij \in  F(k)} 
+c\_{ij} \|  (\mathbf{v}\_i-\mathbf{v}\_j) - \mathbf{R}\_k (\widetilde{\mathbf{v}}\_i-\widetilde{\mathbf{v}}\_j)\|^{2},
 $$
 
 where $F(k)$ is the set of all faces incident on the $k$-th vertex.
