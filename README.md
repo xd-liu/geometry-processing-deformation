@@ -276,7 +276,9 @@ energy, we can use [calculus of
 variations](https://en.wikipedia.org/wiki/Calculus_of_variations) apply
 [Green's identity](https://en.wikipedia.org/wiki/Green's_identities) _twice_ to
 show that minimizers of the squared-Laplacian energy are _bi-_harmonic
-functions ($\Delta \Delta \mathbf{d} = 0$ or $\Delta ^{2}\mathbf{d} = 0$). Obviously all harmonic functions are also
+functions (
+  $\Delta \Delta \mathbf{d} = 0$ or $\Delta ^{2}\mathbf{d} = 0$
+  ). Obviously all harmonic functions are also
 biharmonic functions. This implies that the space of biharmonic functions is
 strictly _larger_. In particular, this will allow use to ensure continuity of
 first derivatives across constrained values at handles.
