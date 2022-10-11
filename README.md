@@ -331,8 +331,8 @@ are in the bottom part:
 
 $$
 \mathbf{D} = \left(\begin{array}{c}
-\mathbf{D}_\text{u} \\
-\mathbf{D}_\text{h}
+\mathbf{D}\_\text{u} \\
+\mathbf{D}\_\text{h}
 \end{array}
 \right)
 $$
@@ -343,7 +343,8 @@ separate the knowns and unknowns in the energy:
 
 $$
 \mathop{\text{min}}_{\mathbf{D}_\text{u}}
-\newcommand{\tr}[1]{\mathop{\text{tr}}\left(#1\right)}\tr{(\mathbf{D}_\text{u}^{\mathsf T} \ \mathbf{D}_\text{h}^{\mathsf T})
+\newcommand{\tr}[1]{\mathop{\text{tr}}\left(\right)}
+\tr{(\mathbf{D}_\text{u}^{\mathsf T} \ \mathbf{D}_\text{h}^{\mathsf T})
 \left(\begin{array}{cc}
 \mathbf{Q}_\text{u,u} & \mathbf{Q}_\text{u,h} \\
 \mathbf{Q}_\text{h,u} & \mathbf{Q}_\text{h,h} 
