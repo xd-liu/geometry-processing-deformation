@@ -181,15 +181,7 @@ coordinate function of the displacement field _independently_.
 We can discretize this over our triangle mesh surface the same way we have in
 smoothing and parameterization assignments:
 
-$$
-\mathop\text{tr}{\left(\mathbf{D}^{\mathsf T} \mathbf{L} \mathbf{D}\right)} \quad \text{subject to } \mathbf{D}\_\text{handles} =
-\mathbf{g}\_\text{handles} - \widetilde{\mathbf{V}}\_\text{handles},
-$$
-
-$$
-\mathop{\text{min}}\_{\mathbf{D}} \mathop\text{tr}{\left(\mathbf{D}^{\mathsf T} \mathbf{L} \mathbf{D}\right)} \quad \text{subject to } \mathbf{D}\_\text{handles} =
-\mathbf{g}\_\text{handles} - \widetilde{\mathbf{V}}\_\text{handles},
-$$
+<p align="center"><img src="./tex/a8dde6bf89d57624cd15508bd0cde91d.svg?invert_in_darkmode" align=middle width=420.6178086pt height=26.707794299999996pt/></p>
 
 where the rows of $\mathbf{g}\_\text{handles} \in  \mathbb{R}^{k \times  3}$ contains the new positions
 of the $k$ control point handles.
