@@ -588,13 +588,13 @@ $$
 > but how did we get here?
 > 
 > Let's start with the summation form. The _constants_ of this formula are the
-> $c_{ij}$ terms and the $(\widetilde{\mathbf{v}}_i-\widetilde{\mathbf{v}}_j)$ terms. Since these always
+> $c\_{ij}$ terms and the $(\widetilde{\mathbf{v}}\_i-\widetilde{\mathbf{v}}\_j)$ terms. Since these always
 > appear together, let us merge them into weighted edge difference vectors
-> $c_{ij} (\widetilde{\mathbf{v}}_i-\widetilde{\mathbf{v}}_j) =: \widetilde{\mathbf{e}}_{ij} \in  \mathbb{R}^{3}$:
+> $c\_{ij} (\widetilde{\mathbf{v}}\_i-\widetilde{\mathbf{v}}\_j) =: \widetilde{\mathbf{e}}\_{ij} \in  \mathbb{R}^{3}$:
 > 
 $$
-\frac{1}{6} \sum\limits_{k=1}^n \sum\limits_{ ij \in  F(k)}  \underbrace{(\mathbf{v}_i-\mathbf{v}_j)^{\mathsf T}
-\mathbf{R}_k \widetilde{\mathbf{e}}_{ij}}_{\in \mathbb{R}},
+\frac{1}{6} \sum\limits\_{k=1}^n \sum\limits\_{ ij \in  F(k)}  \underbrace{(\mathbf{v}\_i-\mathbf{v}\_j)^{\mathsf T}
+\mathbf{R}\_k \widetilde{\mathbf{e}}\_{ij}}\_{\in \mathbb{R}},
 $$
 
 > the inner term in the summation is an [inner
