@@ -304,8 +304,8 @@ of the energy:
 
 $$
 \begin{align*}
-\int\_{\Omega} \| \Delta \mathbf{d}\|^{2} \;dA &\approx  \text{tr}\left\mathbf{D}^{\mathsf T} \mathbf{L}^{\mathsf T} \mathbf{M}^{-{\mathsf T}} \mathbf{M} \mathbf{M}^{-1} \mathbf{L}
-\mathbf{D} \right\\
+\int\_{\Omega} \| \Delta \mathbf{d}\|^{2} \;dA &\approx  \text{tr}\left( \mathbf{D}^{\mathsf T} \mathbf{L}^{\mathsf T} \mathbf{M}^{-{\mathsf T}} \mathbf{M} \mathbf{M}^{-1} \mathbf{L}
+\mathbf{D} \right) \\
 &= \text{tr}{\left( \mathbf{D}^{\mathsf T} \underbrace{\mathbf{L}^{\mathsf T} \mathbf{M}^{-1} \mathbf{L}}\_{\mathbf{Q}} \mathbf{D} \right)},
 \end{align*}
 $$
