@@ -85,8 +85,7 @@ $$
 $$
 
 
-Similarly the deformed surface can be represented as a position function $\mathbf{x}:
-{\Omega} \Rightarrow  \mathbb{R}^{3}$. The displacement vector field is thus a function taking the
+Similarly the deformed surface can be represented as a position function $\mathbf{x}: {\Omega} \Rightarrow  \mathbb{R}^{3}$. The displacement vector field is thus a function taking the
 difference: $\mathbf{d}(u,v) = \mathbf{x}(u,v) - \widetilde{\mathbf{x}}(u,v)$.
 
 For the handle-based deformation problem we would like to find a new surface
