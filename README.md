@@ -154,14 +154,14 @@ $$
 
 where 
 
-$
+$$
 {\nabla}\mathbf{d} = \left(
   \begin{array}{ccc}
 \frac{\partial d^x}{\partial u} & \frac{\partial d^y}{\partial u} & \frac{\partial d^z}{\partial u} \\
 \frac{\partial d^x}{\partial v} & \frac{\partial d^y}{\partial v} & \frac{\partial d^z}{\partial v} 
 \end{array}
 \right)
-$
+$$
 
 the [Jacobian](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant)
 matrix of the displacement field $\mathbf{d}$ 
@@ -182,11 +182,11 @@ We can discretize this over our triangle mesh surface the same way we have in
 smoothing and parameterization assignments:
 
 $$
-\mathop{\text{min}}_{\mathbf{D}} \mathop\text{tr}{\left(\mathbf{D}^{\mathsf T} \mathbf{L} \mathbf{D}\right)} \quad \text{subject to } \mathbf{D}_\text{handles} =
-\mathbf{g}_\text{handles} - \widetilde{\mathbf{V}}_\text{handles},
+\mathop{\text{min}}\_{\mathbf{D}} \mathop\text{tr}{\left(\mathbf{D}^{\mathsf T} \mathbf{L} \mathbf{D}\right)} \quad \text{subject to } \mathbf{D}\_\text{handles} =
+\mathbf{g}\_\text{handles} - \widetilde{\mathbf{V}}\_\text{handles},
 $$
 
-where the rows of $\mathbf{g}_\text{handles} \in  \mathbb{R}^{k \times  3}$ contains the new positions
+where the rows of $\mathbf{g}\_\text{handles} \in  \mathbb{R}^{k \times  3}$ contains the new positions
 of the $k$ control point handles.
 
 While easy to implement, this method suffers from a couple immediate problems:
