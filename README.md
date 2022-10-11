@@ -682,7 +682,7 @@ Minimizing the energy above with respect to $\mathbf{V}$ corresponds to solving 
 Dirichlet energy-like minimization problem:
 
 $$
-\mathop{\text{min}}_\mathbf{V} \mathop\text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{L} \mathbf{V} \right)} + \mathop\text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{B} \right)}
+{\text{min}}_\mathbf{V} \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{L} \mathbf{V} \right)} + \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{B} \right)}
 $$
 
 
