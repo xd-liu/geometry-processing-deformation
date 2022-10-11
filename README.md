@@ -342,7 +342,7 @@ Since the displacements at handles are _known_ before the optimization, we can
 separate the knowns and unknowns in the energy:
 
 $$
-\mathop{\text{min}}\_{\mathbf{D}\_\text{u}}
+\mathop{\text{min}}\_{\mathbf{D}\_\text{u}} \\, \\,
 \text{tr}{(\mathbf{D}\_\text{u}^{\mathsf T} \ \mathbf{D}\_\text{h}^{\mathsf T})
 \left(\begin{array}{cc}
 \mathbf{Q}\_\text{u,u} & \mathbf{Q}\_\text{u,h} \\
