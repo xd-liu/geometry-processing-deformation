@@ -153,10 +153,12 @@ $$
 $$
 
 where 
-${\nabla}\mathbf{d} = \left(\begin{array}{ccc}
+${\nabla}\mathbf{d} = \left(
+  \begin{array}{ccc}
 \frac{\partial d^x}{\partial u} & \frac{\partial d^y}{\partial u} & \frac{\partial d^z}{\partial u} \\
-\frac{\partial d^x}{\partial v} & \frac{\partial d^y}{\partial v} & \frac{\partial d^z}{\partial v}
-\end{array}\right)$
+\frac{\partial d^x}{\partial v} & \frac{\partial d^y}{\partial v} & \frac{\partial d^z}{\partial v} 
+\end{array}
+\right)$
 the [Jacobian](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant)
 matrix of the displacement field $\mathbf{d}$ 
 
