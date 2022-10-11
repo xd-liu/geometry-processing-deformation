@@ -357,17 +357,17 @@ $$
 
 $$
 \mathop{\text{min}}\_{\mathbf{D}\_\text{u}}
-\newcommand{\tr}[1]{\mathop{\text{tr}}\left(#1\right)}\tr{\mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,u} \mathbf{D}\_\text{u} +
+\text{tr} \left({\mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,u} \mathbf{D}\_\text{u} +
 2 \mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,h} \mathbf{D}\_\text{h} + 
 \underbrace{\mathbf{D}\_\text{h}^{\mathsf T} \mathbf{Q}\_\text{h,h}
-\mathbf{D}\_\text{h}}\_\text{constant}}
+\mathbf{D}\_\text{h}}\_\text{constant}}\right)
 $$
 
 $$
 \mathop{\text{min}}\_{\mathbf{D}\_\text{u}} 
-\newcommand{\tr}[1]{\mathop{\text{tr}}\left(#1\right)}\tr{
+\text{tr} \left({
 \mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,u} \mathbf{D}\_\text{u} +
-2 \mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,h} \mathbf{D}\_\text{h}}
+2 \mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,h} \mathbf{D}\_\text{h}} \right)
 $$
 
 where $\mathbf{Q}\_\text{u,u} \in  \mathbb{R}^{(n-k) \times  (n-k)}$ is the quadratic coefficients matrix
