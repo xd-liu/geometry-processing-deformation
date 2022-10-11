@@ -563,8 +563,7 @@ $$
 $$
 
 
-if we stack the rotation matrices $\mathbf{R}\_k$ into large matrix $\mathbf{R} \in  \mathbb{R}^{3n \times 
-3}$ then we can write this energy in matrix form as:
+if we stack the rotation matrices $\mathbf{R}\_k$ into large matrix $\mathbf{R} \in  \mathbb{R}^{3n \times 3}$ then we can write this energy in matrix form as:
 
 $$
 \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{L} \mathbf{V} \right)} + \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{K} \mathbf{R} \right)},
@@ -580,6 +579,7 @@ differences across edges in the rest mesh (e.g., $\widetilde{\mathbf{v}}\_i - \w
 > [bilinear form](https://en.wikipedia.org/wiki/Bilinear_form) that combines unknown 
 > vertex positions and unknown rotations. We have identified above that we can
 > write this in summation or matrix form:
+
 $$
 \frac{1}{6} \sum\limits_{k=1}^n \sum\limits_{ ij \in  F(k)}  c_{ij} (\mathbf{v}_i-\mathbf{v}_j)^{\mathsf T} \mathbf{R}_k (\widetilde{\mathbf{v}}_i-\widetilde{\mathbf{v}}_j)
 = \mathop\text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{K} \mathbf{R} \right)},
