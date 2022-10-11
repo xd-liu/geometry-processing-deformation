@@ -208,15 +208,17 @@ would mean a translation: most of the shape is simply translated.
 
 ![](images/bunny-harmonic.gif)
 
-The gradient operator (${\nabla}$) is a [_linear_
+The gradient operator (
+  ${\nabla}$
+  ) is a [_linear_
 operator](https://en.wikipedia.org/wiki/Linear_map). We can alternatively view
 our minimization above in terms of the unknown positions $\mathbf{x}$:
 
 $$
-\mathop{\text{min}}_\mathbf{d} \int_{\Omega} \|  {\nabla}\mathbf{d} \| _F^2 \ dA \Rightarrow  
-\mathop{\text{min}}_\mathbf{x} \int_{\Omega} \|  {\nabla}(\mathbf{x} - \widetilde{\mathbf{x}}) \| _F^2 \ dA \Rightarrow  
-\mathop{\text{min}}_\mathbf{x} \int_{\Omega} \|  \underbrace{{\nabla}\mathbf{x}}_\text{after} -
-\underbrace{{\nabla}\widetilde{\mathbf{x}}}_\text{before} \| _F^2 \ dA.
+\mathop{\text{min}}\_\mathbf{d} \int\_{\Omega} \|  {\nabla}\mathbf{d} \| \_F^2 \ dA \Rightarrow  
+\mathop{\text{min}}\_\mathbf{x} \int\_{\Omega} \|  {\nabla}(\mathbf{x} - \widetilde{\mathbf{x}}) \| \_F^2 \ dA \Rightarrow  
+\mathop{\text{min}}\_\mathbf{x} \int\_{\Omega} \|  \underbrace{{\nabla}\mathbf{x}}\_\text{after} -
+\underbrace{{\nabla}\widetilde{\mathbf{x}}}\_\text{before} \| \_F^2 \ dA.
 $$
 
 If we think of the gradient of the position function ${\nabla}\mathbf{x}$ (with respect to the
