@@ -310,13 +310,16 @@ $$
 \end{align*}
 $$
 
-where $\mathbf{M} \in  \mathbb{R}^{n \times  n}$ is the mass-matrix for the given mesh and $\mathbf{Q} \in 
-\mathbb{R}^{n\times n}$ can be thought of as the bi-Laplacian matrix.
+where $\mathbf{M} \in  \mathbb{R}^{n \times  n}$ is the mass-matrix for the given mesh and $\mathbf{Q} \in \mathbb{R}^{n\times n}$ can be thought of as the bi-Laplacian matrix.
 
 > #### $k$-harmonic
 > 
 > The logical continuation of harmonic and biharmonic deformation is to consider
-> _triharmonic_ ($\Delta ^{3}\mathbf{d} = 0$) and _tetraharmonic_ ($\Delta ^{4}\mathbf{d} = 0$) and so on. It's
+> _triharmonic_ (
+> $\Delta ^{3}\mathbf{d} = 0$
+> ) and _tetraharmonic_ (
+> $\Delta ^{4}\mathbf{d} = 0$
+> ) and so on. It's
 > straightforward to implement these, though there are diminishing returns and
 > increasing costs.
 
