@@ -342,39 +342,39 @@ Since the displacements at handles are _known_ before the optimization, we can
 separate the knowns and unknowns in the energy:
 
 $$
-\mathop{\text{min}}_{\mathbf{D}_\text{u}}
-\text{tr}{(\mathbf{D}_\text{u}^{\mathsf T} \ \mathbf{D}_\text{h}^{\mathsf T})
+\mathop{\text{min}}\_{\mathbf{D}\_\text{u}}
+\text{tr}{(\mathbf{D}\_\text{u}^{\mathsf T} \ \mathbf{D}\_\text{h}^{\mathsf T})
 \left(\begin{array}{cc}
-\mathbf{Q}_\text{u,u} & \mathbf{Q}_\text{u,h} \\
-\mathbf{Q}_\text{h,u} & \mathbf{Q}_\text{h,h} 
+\mathbf{Q}\_\text{u,u} & \mathbf{Q}\_\text{u,h} \\
+\mathbf{Q}\_\text{h,u} & \mathbf{Q}\_\text{h,h} 
 \end{array}\right)
 \left(\begin{array}{c}
-  \mathbf{D}_\text{u} \\
-  \mathbf{D}_\text{h}
+  \mathbf{D}\_\text{u} \\
+  \mathbf{D}\_\text{h}
 \end{array}
 \right)}
 $$
 
 $$
-\mathop{\text{min}}_{\mathbf{D}_\text{u}}
-\newcommand{\tr}[1]{\mathop{\text{tr}}\left(#1\right)}\tr{\mathbf{D}_\text{u}^{\mathsf T} \mathbf{Q}_\text{u,u} \mathbf{D}_\text{u} +
-2 \mathbf{D}_\text{u}^{\mathsf T} \mathbf{Q}_\text{u,h} \mathbf{D}_\text{h} + 
-\underbrace{\mathbf{D}_\text{h}^{\mathsf T} \mathbf{Q}_\text{h,h}
-\mathbf{D}_\text{h}}_\text{constant}}
+\mathop{\text{min}}\_{\mathbf{D}\_\text{u}}
+\newcommand{\tr}[1]{\mathop{\text{tr}}\left(#1\right)}\tr{\mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,u} \mathbf{D}\_\text{u} +
+2 \mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,h} \mathbf{D}\_\text{h} + 
+\underbrace{\mathbf{D}\_\text{h}^{\mathsf T} \mathbf{Q}\_\text{h,h}
+\mathbf{D}\_\text{h}}\_\text{constant}}
 $$
 
 $$
-\mathop{\text{min}}_{\mathbf{D}_\text{u}} 
+\mathop{\text{min}}\_{\mathbf{D}\_\text{u}} 
 \newcommand{\tr}[1]{\mathop{\text{tr}}\left(#1\right)}\tr{
-\mathbf{D}_\text{u}^{\mathsf T} \mathbf{Q}_\text{u,u} \mathbf{D}_\text{u} +
-2 \mathbf{D}_\text{u}^{\mathsf T} \mathbf{Q}_\text{u,h} \mathbf{D}_\text{h}}
+\mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,u} \mathbf{D}\_\text{u} +
+2 \mathbf{D}\_\text{u}^{\mathsf T} \mathbf{Q}\_\text{u,h} \mathbf{D}\_\text{h}}
 $$
 
-where $\mathbf{Q}_\text{u,u} \in  \mathbb{R}^{(n-k) \times  (n-k)}$ is the quadratic coefficients matrix
+where $\mathbf{Q}\_\text{u,u} \in  \mathbb{R}^{(n-k) \times  (n-k)}$ is the quadratic coefficients matrix
 corresponding to the unknown displacements.
 
 This quadratic optimization problem may solved by setting all partial
-derivatives with respect to degrees of freedom in $\mathbf{D}_\text{u}$ to zero:
+derivatives with respect to degrees of freedom in $\mathbf{D}\_\text{u}$ to zero:
 
 $$
 2 \mathbf{Q}_\text{u,u} \mathbf{D}_\text{u} + 2 \mathbf{Q}_\text{u,h} \mathbf{D}_\text{h}
