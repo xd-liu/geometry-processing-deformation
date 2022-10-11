@@ -264,10 +264,10 @@ descriptor and massage our optimization problem back in terms of
 displacements:
 
 $$
-\mathop{\text{min}}_\mathbf{x} \int_{\Omega} \|  \underbrace{\Delta \mathbf{x}}_\text{after} -
-\underbrace{\Delta \widetilde{\mathbf{x}}}_\text{before} \| ^2 \ dA \Rightarrow 
-\mathop{\text{min}}_\mathbf{x} \int_{\Omega} \|  \Delta (\mathbf{x} - \widetilde{\mathbf{x}}) \| ^2 \ dA \Rightarrow  
-\mathop{\text{min}}_\mathbf{d} \int_{\Omega} \|  \Delta \mathbf{d} \| ^2 \ dA.
+\mathop{\text{min}}\_\mathbf{x} \int\_{\Omega} \|  \underbrace{\Delta \mathbf{x}}\_\text{after} -
+\underbrace{\Delta \widetilde{\mathbf{x}}}\_\text{before} \| ^2 \ dA \Rightarrow 
+\mathop{\text{min}}\_\mathbf{x} \int\_{\Omega} \|  \Delta (\mathbf{x} - \widetilde{\mathbf{x}}) \| ^2 \ dA \Rightarrow  
+\mathop{\text{min}}\_\mathbf{d} \int\_{\Omega} \|  \Delta \mathbf{d} \| ^2 \ dA.
 $$
 
 
