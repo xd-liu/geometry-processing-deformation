@@ -641,18 +641,22 @@ $$
 > _Further_, the constant term $\widetilde{e}^{\beta}_{ij}$ in the summation acts the same on
 > $(v\_i^{\alpha} - v\_j^{\alpha})R\_k^{{\alpha}{\beta}}$ for any ${\alpha}$ value. This implies that $\mathbf{K}\_{1}=\mathbf{K}\_{2}=\mathbf{K}\_{3}$,
 > so we can reduce the matrix form to:
+> 
 $$
-\mathop\text{tr}{\left(\mathbf{V} \mathbf{K} \mathbf{R}\right)}.
+\text{tr}{\left(\mathbf{V} \mathbf{K} \mathbf{R}\right)}.
 $$
 
 > 
-> Finally, we can answer what is in each entry $K_{vw}$, where $v$ chooses the
+> Finally, we can answer what is in each entry $K\_{vw}$, where $v$ chooses the
 > row and $w=3k+{\beta}$ chooses the column of $\mathbf{K}$. Treating our nested summation as
-> nested for-loops, we can increment entries in $\mathbf{K}$ 
+> nested for-loops, we can increment entries in $\mathbf{K}
+> 
+> $$ 
 \begin{align*}
-K_{i\ 3k+{\beta}} & \mathrel{+}= \widetilde{e}_{ij}^{\beta}, \\
-K_{j\ 3k+{\beta}} & \mathrel{+}= -\widetilde{e}_{ij}^{\beta}, \\
+K\_{i\ 3k+{\beta}} & \mathrel{+}= \widetilde{e}\_{ij}^{\beta}, \\
+K\_{j\ 3k+{\beta}} & \mathrel{+}= -\widetilde{e}\_{ij}^{\beta}, \\
 \end{align*}
+$$
 
 > for each half-edge encountered. 
 
@@ -664,10 +668,10 @@ K_{j\ 3k+{\beta}} & \mathrel{+}= -\widetilde{e}_{ij}^{\beta}, \\
 Minimizing this energy with respect $\mathbf{R}$ corresponds to minimizing:
 
 $$
-\mathop\text{tr}{\left( \underbrace{\mathbf{V}^{\mathsf T} \mathbf{K}}_{\mathbf{C}^{\mathsf T}} \mathbf{R} \right)},
+\mathop\text{tr}{\left( \underbrace{\mathbf{V}^{\mathsf T} \mathbf{K}}\_{\mathbf{C}^{\mathsf T}} \mathbf{R} \right)},
 $$
 
-where $\mathbf{C} \in  \mathbb{R}^{3n \times  3}$ stacks weighted covariance matrices $\mathbf{C}_k \in  \mathbb{R}^{3 \times 
+where $\mathbf{C} \in  \mathbb{R}^{3n \times  3}$ stacks weighted covariance matrices $\mathbf{C}\_k \in  \mathbb{R}^{3 \times 
 3}$ for each region _covered_ by the corresponding rotation $\mathbf{R}_k$. We have
 seen this problem before in the registration assignment. For each $\mathbf{C}_k$,
 $\mathbf{R}_k$ will be the closest rotation matrix solved via [singular value
