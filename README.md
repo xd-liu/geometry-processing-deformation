@@ -383,13 +383,12 @@ $$
 
 
 If we don't change _which_ vertices are handles, but only change the positions
-of the selected handles, then only $\mathbf{D}_\text{h}$ changes above. In particular,
-the matrix $\mathbf{Q}_\text{u,u}$ is unchanged. Therefore, we can
+of the selected handles, then only $\mathbf{D}\_\text{h}$ changes above. In particular,
+the matrix $\mathbf{Q}\_\text{u,u}$ is unchanged. Therefore, we can
 [prefactorize](https://en.wikipedia.org/wiki/Cholesky_decomposition) it so that
 _applying its inverse_ is fast (`igl::min_quad_with_fixed` does this for you).
 
-> Actually the entire term $\mathbf{Q}_\text{u,u}^{-1} \mathbf{Q}_\text{u,h} =: \mathbf{W} \in  \mathbb{R}^{(n-k)
-\times  k}$ does not change. The columns of $\mathbf{W}$ reveal how unknown displacements
+> Actually the entire term $\mathbf{Q}\_\text{u,u}^{-1}\mathbf{Q}\_\text{u,h} =: \mathbf{W} \in  \mathbb{R}^{(n-k)\times  k}$ does not change. The columns of $\mathbf{W}$ reveal how unknown displacements
 > respond to each handle point's displacement (see also "An intuitive framework
 > for real-time freeform modeling" [Botsch & Kobbelt 2004]). This provides a
 > gateway to the relationship with linear blend skinning and automatic
