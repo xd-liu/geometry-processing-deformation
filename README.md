@@ -549,7 +549,7 @@ mesh vertex positions $\mathbf{V}$ depend on each other requiring a _global_ sol
 the geometry processing literature, this is known as a local-global
 optimization (see ["As-rigid-as-possible surface modeling" [Sorkine & Alexa
 2007]](papers/arap_web.pdf)). It is also known as "alternating block coordinate descent" because we
-have separated the variables into disjoint sets ($\mathbf{V},\mathbf{R}_1,\ldots ,\mathbf{R}_n$) and taking
+have separated the variables into disjoint sets ( $\mathbf{V},\mathbf{R}\_1,\ldots ,\mathbf{R}\_n$ ) and taking
 the optimal descent direction for each independently.
 
 Observing the discrete energy above we can see that the energy is quadratic in
@@ -567,7 +567,7 @@ if we stack the rotation matrices $\mathbf{R}_k$ into large matrix $\mathbf{R} \
 3}$ then we can write this energy in matrix form as:
 
 $$
-\mathop\text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{L} \mathbf{V} \right)} + \mathop\text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{K} \mathbf{R} \right)},
+\text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{L} \mathbf{V} \right)} + \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{K} \mathbf{R} \right)},
 $$
 
 where $\mathbf{L} \in  \mathbb{R}^{n \times  n}$ is the familiar cotangent discrete Laplacian matrix and
