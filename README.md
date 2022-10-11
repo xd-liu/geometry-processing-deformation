@@ -620,8 +620,7 @@ $$
 $$
 
 > where the third sum is over all rotations $k$ such that the half-edge $ij$
-> belongs to the half-edges of the faces incident on the $k$-th vertex: $k | ij
-> \in F(k)$. Well, this means $k$ can either be $i$ or $j$ or the third vertex of
+> belongs to the half-edges of the faces incident on the $k$-th vertex: $k | ij \in F(k)$. Well, this means $k$ can either be $i$ or $j$ or the third vertex of
 > the $f$-th face.
 > 
 > Now let's turn our attention back to the
@@ -629,14 +628,15 @@ $$
 > never _mix_. That is, we never add/multiply $v_i^{\alpha}$, $v_j^{\gamma}$, and $R_k^{{\delta}{\beta}}$
 > unless ${\alpha}={\gamma}={\delta}$. This implies that we can write this summation in matrix form
 > as:
+> 
 $$
-\mathbf{V}_{1}^{\mathsf T} \mathbf{K}_{1} \mathbf{R}_{1} +  
-\mathbf{V}_{2}^{\mathsf T} \mathbf{K}_{2} \mathbf{R}_{2} +  
-\mathbf{V}_{3}^{\mathsf T} \mathbf{K}_{3} \mathbf{R}_{3},
+\mathbf{V}\_{1}^{\mathsf T} \mathbf{K}\_{1} \mathbf{R}\_{1} +  
+\mathbf{V}\_{2}^{\mathsf T} \mathbf{K}\_{2} \mathbf{R}\_{2} +  
+\mathbf{V}\_{3}^{\mathsf T} \mathbf{K}\_{3} \mathbf{R}\_{3},
 $$
 
-> where $\mathbf{V}_{\alpha} \in  \mathbb{R}^n$ is ${\alpha}$-th column of $\mathbf{V}$, $\mathbf{R}_{\alpha} \in  \mathbb{R}^{3n}$ is the ${\alpha}$-th column of
-> $\mathbf{R}$ and $\mathbf{K}_{1},\mathbf{K}_{2},\mathbf{K}_{3} \in  \mathbb{R}^{n \times  3n}$ are sparse matrices.
+> where $\mathbf{V}\_{\alpha} \in  \mathbb{R}^n$ is ${\alpha}$-th column of $\mathbf{V}$, $\mathbf{R}\_{\alpha} \in  \mathbb{R}^{3n}$ is the ${\alpha}$-th column of
+> $\mathbf{R}$ and $\mathbf{K}\_{1},\mathbf{K}\_{2},\mathbf{K}\_{3} \in  \mathbb{R}^{n \times  3n}$ are sparse matrices.
 > 
 > _Further_, the constant term $\widetilde{e}^{\beta}_{ij}$ in the summation acts the same on
 > $(v_i^{\alpha} - v_j^{\alpha})R_k^{{\alpha}{\beta}}$ for any ${\alpha}$ value. This implies that $\mathbf{K}_{1}=\mathbf{K}_{2}=\mathbf{K}_{3}$,
