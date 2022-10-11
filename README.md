@@ -124,7 +124,7 @@ an egalitarian way by integrating a _local_ measure of distortion at all points
 on the surface:
 
 $$
-\mathop{\text{min}}_\mathbf{x} \int_{\Omega} \|  e(\mathbf{x}) \|^{2} \ dA \quad \text{ subject to } \mathbf{x}(u_i, v_i) = \mathbf{g}_i \ \forall  i = \{1, \ldots  , k\},
+\mathop{\text{min}}\_\mathbf{x} \int\_{\Omega} \|  e(\mathbf{x}) \|^{2} \ dA \quad \text{ subject to } \mathbf{x}(u\_i, v\_i) = \mathbf{g}\_i \ \forall  i = \{1, \ldots  , k\},
 $$
 
 
