@@ -435,8 +435,7 @@ where the translation vector $\mathbf{t}$ falls out because a translation has co
 gradient.
 
 We do not know the rotation $\mathbf{R}$ ahead of time, but we could be as generous
-as possible and use the "best" rotation $\mathbf{R} \leftarrow  \mathop{\text{argmin}}_\mathbf{R} \int_{\Omega} \|  {\nabla}\mathbf{x} -  \mathbf{R}
-{\nabla}\widetilde{\mathbf{x}} \|^{2} \;dA$:
+as possible and use the "best" rotation $\mathbf{R}\leftarrow  \mathop{\text{argmin}}\_\mathbf{R} \int\_{\Omega} \|  {\nabla}\mathbf{x} -  \mathbf{R}{\nabla}\widetilde{\mathbf{x}} \|^{2} \\;dA$:
 
 $$
 \int_{\Omega} \left\|{\nabla}\mathbf{x} - \left( \mathop{\text{argmin}}_\mathbf{R} \int_{\Omega} \|  {\nabla}\mathbf{x} -  \mathbf{R} {\nabla}\widetilde{\mathbf{x}} \|^{2} \;dA \right){\nabla}\widetilde{\mathbf{x}}\right\|^{2} \;dA.
