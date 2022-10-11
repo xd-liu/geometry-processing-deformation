@@ -601,9 +601,10 @@ $$
 > product](https://en.wikipedia.org/wiki/Inner_product_space); that is, a
 > [scalar](https://en.wikipedia.org/wiki/Scalar_(mathematics)). Let's expose this
 > by expanding the matrix-vector products of the inner-product:
+> 
 $$
-\frac{1}{6} \sum\limits_{k=1}^n \sum\limits_{ ij \in  F(k)} \sum\limits_{{\alpha}=1}^3 \sum\limits_{{\beta}=1}^3
-(v_i^{\alpha} - v_j^{\alpha})R_k^{{\alpha}{\beta}}\widetilde{e}_{ij}^{\beta}.
+\frac{1}{6} \sum\limits\_{k=1}^n \sum\limits\_{ ij \in  F(k)} \sum\limits\_{{\alpha}=1}^3 \sum\limits\_{{\beta}=1}^3
+(v\_i^{\alpha} - v\_j^{\alpha})R\_k^{{\alpha}{\beta}}\widetilde{e}\_{ij}^{\beta}.
 $$
 
 > 
@@ -612,9 +613,10 @@ $$
 > incident faces (second sum). Instead, let's rearrange these sums to loop over
 > all faces first, then the half-edges of that face, and then over all
 > per-vertex rotations that involve this half-edge:
+> 
 $$
-\frac{1}{6} \sum\limits_{f=1}^m \sum\limits_{ ij \in  E(f)} \quad  \sum\limits_{k | ij \in F(k)} \quad \sum\limits_{{\alpha}=1}^3 \sum\limits_{{\beta}=1}^3
-(v_i^{\alpha} - v_j^{\alpha})R_k^{{\alpha}{\beta}}\widetilde{e}_{ij}^{\beta},
+\frac{1}{6} \sum\limits\_{f=1}^m \sum\limits\_{ ij \in  E(f)} \quad  \sum\limits\_{k | ij \in F(k)} \quad \sum\limits\_{{\alpha}=1}^3 \sum\limits\_{{\beta}=1}^3
+(v\_i^{\alpha} - v\_j^{\alpha})R\_k^{{\alpha}{\beta}}\widetilde{e}\_{ij}^{\beta},
 $$
 
 > where the third sum is over all rotations $k$ such that the half-edge $ij$
