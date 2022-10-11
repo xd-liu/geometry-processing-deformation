@@ -67,10 +67,11 @@ shape will not tear, crack or change its topological features.
 
 If we represent our shape discretely as a [triangle
 mesh](https://en.wikipedia.org/wiki/Triangle_mesh) (e.g., with _rest_ vertices
-in $\widetilde{\mathbf{V}}
-\in  \mathbb{R}^{n \times  3}$ and faces in $F \in  \{1,\ldots ,n\}^{m \times  3}$, then we can _trivially_
+in $\widetilde{\mathbf{V}} \in  \mathbb{R}^{n \times  3}$ and faces in $F \in  \{1,\ldots ,n\}^{m \times  3}$, then we can _trivially_
 ensure a continuous deformation by determining new vertex positions $\mathbf{V}$. The
-topology (connectivity) of the mesh ($F$) will not change.
+topology (connectivity) of the mesh (
+  $F$
+  ) will not change.
 
 #### Generic Distortion Minimization
 
