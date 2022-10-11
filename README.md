@@ -52,8 +52,12 @@ complementary ways:
  retains the details of the old shape but fulfills the handle constraints.
 
 In the following discussion we will take advantage of the ability to switch
-between thinking of the unknowns as the positions of the deformed shape ($\mathbf{x}$)
-and displacements ($\mathbf{d}$). These views are equivalent, but often one or the
+between thinking of the unknowns as the positions of the deformed shape (
+  $\mathbf{x}$
+  )
+and displacements (
+  $\mathbf{d}$
+  ). These views are equivalent, but often one or the
 other provides a better intuitive understanding.
 
 #### Continuity
