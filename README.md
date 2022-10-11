@@ -588,7 +588,7 @@ differences across edges in the rest mesh (e.g., $\widetilde{\mathbf{v}}\_i - \w
 \frac{1}{6} \sum\limits\_{k=1}^n \sum\limits\_{ ij \in  F(k)}  c\_{ij} (\mathbf{v}\_i-\mathbf{v}\_j)^{\mathsf T} \mathbf{R}\_k (\widetilde{\mathbf{v}}\_i-\widetilde{\mathbf{v}}\_j)
 = \text{tr}{\left( \mathbf{V}^{\mathsf T} \mathbf{K} \mathbf{R} \right)},
 $$
-
+>
 > but how did we get here?
 > 
 > Let's start with the summation form. The _constants_ of this formula are the
