@@ -302,11 +302,13 @@ average](https://en.wikipedia.org/wiki/Mean_of_a_function) of the Laplacian
 $\mathbf{M}^{-1}\mathbf{L} \mathbf{f}$. Integrating this over the mesh we have our complete approximate
 of the energy:
 
+$$
 \begin{align*}
-\int_{\Omega} \| \Delta \mathbf{d}\|^{2} \;dA &\approx  \newcommand{\tr}[1]{\mathop{\text{tr}}\left(#1\right)}\tr{ \mathbf{D}^{\mathsf T} \mathbf{L}^{\mathsf T} \mathbf{M}^{-{\mathsf T}} \mathbf{M} \mathbf{M}^{-1} \mathbf{L}
+\int\_{\Omega} \| \Delta \mathbf{d}\|^{2} \;dA &\approx  \newcommand{\tr}[1]{\mathop{\text{tr}}\left(#1\right)}\tr{ \mathbf{D}^{\mathsf T} \mathbf{L}^{\mathsf T} \mathbf{M}^{-{\mathsf T}} \mathbf{M} \mathbf{M}^{-1} \mathbf{L}
 \mathbf{D}}\\
-&= \mathop\text{tr}{\left( \mathbf{D}^{\mathsf T} \underbrace{\mathbf{L}^{\mathsf T} \mathbf{M}^{-1} \mathbf{L}}_{\mathbf{Q}} \mathbf{D} \right)},
+&= \mathop\text{tr}{\left( \mathbf{D}^{\mathsf T} \underbrace{\mathbf{L}^{\mathsf T} \mathbf{M}^{-1} \mathbf{L}}\_{\mathbf{Q}} \mathbf{D} \right)},
 \end{align*}
+$$
 
 
 where $\mathbf{M} \in  \mathbb{R}^{n \times  n}$ is the mass-matrix for the given mesh and $\mathbf{Q} \in 
