@@ -639,7 +639,7 @@ $$
 > $\mathbf{R}$ and $\mathbf{K}\_{1},\mathbf{K}\_{2},\mathbf{K}\_{3} \in  \mathbb{R}^{n \times  3n}$ are sparse matrices.
 > 
 > _Further_, the constant term $\widetilde{e}^{\beta}_{ij}$ in the summation acts the same on
-> $(v_i^{\alpha} - v_j^{\alpha})R_k^{{\alpha}{\beta}}$ for any ${\alpha}$ value. This implies that $\mathbf{K}_{1}=\mathbf{K}_{2}=\mathbf{K}_{3}$,
+> $(v\_i^{\alpha} - v\_j^{\alpha})R\_k^{{\alpha}{\beta}}$ for any ${\alpha}$ value. This implies that $\mathbf{K}\_{1}=\mathbf{K}\_{2}=\mathbf{K}\_{3}$,
 > so we can reduce the matrix form to:
 $$
 \mathop\text{tr}{\left(\mathbf{V} \mathbf{K} \mathbf{R}\right)}.
