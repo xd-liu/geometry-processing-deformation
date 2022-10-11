@@ -248,7 +248,7 @@ and the average (i.e., [centroid](https://en.wikipedia.org/wiki/Centroid)) of
 an infinitesimal region around that point:
 
 $$
-\Delta  f(\mathbf{x}) = \lim_{|B(\mathbf{x})| \rightarrow  0} \frac{1}{|B(\mathbf{x}))|} \int_{B(\mathbf{x})} f(\mathbf{z}) \;d\mathbf{z} - f(\mathbf{x})
+\Delta  f(\mathbf{x}) = \lim_{|B(\mathbf{x})| \rightarrow  0} \frac{1}{|B(\mathbf{x}))|} \int_{B(\mathbf{x})} f(\mathbf{z}) \, \, d\mathbf{z} - f(\mathbf{x})
 $$
 
 
@@ -275,7 +275,7 @@ $$
 $$
 
 
-Just as we can show that harmonic functions ($\Delta \mathbf{d} = 0$) minimize the Dirichlet
+Just as we can show that harmonic functions ( $\Delta \mathbf{d} = 0$ ) minimize the Dirichlet
 energy, we can use [calculus of
 variations](https://en.wikipedia.org/wiki/Calculus_of_variations) apply
 [Green's identity](https://en.wikipedia.org/wiki/Green's_identities) _twice_ to
@@ -308,7 +308,7 @@ of the energy:
 
 $$
 \begin{align*}
-\int\_{\Omega} \| \Delta \mathbf{d}\|^{2} \;dA &\approx  \text{tr}{\left( \mathbf{D}^{\mathsf T} \mathbf{L}^{\mathsf T} \mathbf{M}^{-{\mathsf T}} \mathbf{M} \mathbf{M}^{-1} \mathbf{L}
+\int\_{\Omega} \| \Delta \mathbf{d}\|^{2} \, \, dA &\approx  \text{tr}{\left( \mathbf{D}^{\mathsf T} \mathbf{L}^{\mathsf T} \mathbf{M}^{-{\mathsf T}} \mathbf{M} \mathbf{M}^{-1} \mathbf{L}
 \mathbf{D} \right)} \\
 &= \text{tr}{\left( \mathbf{D}^{\mathsf T} \underbrace{\mathbf{L}^{\mathsf T} \mathbf{M}^{-1} \mathbf{L}}\_{\mathbf{Q}} \mathbf{D} \right)},
 \end{align*}
@@ -429,9 +429,9 @@ transformation:
 
 $$
 \begin{align*}
-\int\_{\Omega} \|  {\nabla} \mathbf{x} - {\nabla}(\mathbf{R} \widetilde{\mathbf{x}} + \mathbf{t}) \|^{2} \;dA 
-  &= \int\_{\Omega} \|  {\nabla} \mathbf{x} - {\nabla}(\mathbf{R} \widetilde{\mathbf{x}}) - {\nabla}\mathbf{t}\|^{2} \;dA \\
-  &= \int\_{\Omega} \|  {\nabla} \mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}} \|^{2} \;dA,
+\int\_{\Omega} \|  {\nabla} \mathbf{x} - {\nabla}(\mathbf{R} \widetilde{\mathbf{x}} + \mathbf{t}) \|^{2} \, \, dA 
+  &= \int\_{\Omega} \|  {\nabla} \mathbf{x} - {\nabla}(\mathbf{R} \widetilde{\mathbf{x}}) - {\nabla}\mathbf{t}\|^{2} \, \, dA \\
+  &= \int\_{\Omega} \|  {\nabla} \mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}} \|^{2} \, \, dA,
 \end{align*}
 $$
 
@@ -439,10 +439,10 @@ where the translation vector $\mathbf{t}$ falls out because a translation has co
 gradient.
 
 We do not know the rotation $\mathbf{R}$ ahead of time, but we could be as generous
-as possible and use the "best" rotation $\mathbf{R}\leftarrow  \mathop{\text{argmin}}\_\mathbf{R} \int\_{\Omega} \|  {\nabla}\mathbf{x} -  \mathbf{R}{\nabla}\widetilde{\mathbf{x}} \|^{2} \;dA$:
+as possible and use the "best" rotation $\mathbf{R}\leftarrow  \mathop{\text{argmin}}\_\mathbf{R} \int\_{\Omega} \|  {\nabla}\mathbf{x} -  \mathbf{R}{\nabla}\widetilde{\mathbf{x}} \|^{2} \, \, dA$:
 
 $$
-\int_{\Omega} \left\|{\nabla}\mathbf{x} - \left( \mathop{\text{argmin}}_\mathbf{R} \int_{\Omega} \|  {\nabla}\mathbf{x} -  \mathbf{R} {\nabla}\widetilde{\mathbf{x}} \|^{2} \;dA \right){\nabla}\widetilde{\mathbf{x}}\right\|^{2} \;dA.
+\int_{\Omega} \left\|{\nabla}\mathbf{x} - \left( \mathop{\text{argmin}}_\mathbf{R} \int_{\Omega} \|  {\nabla}\mathbf{x} -  \mathbf{R} {\nabla}\widetilde{\mathbf{x}} \|^{2} \, \, dA \right){\nabla}\widetilde{\mathbf{x}}\right\|^{2} \, \, dA.
 $$
 
 
@@ -450,7 +450,7 @@ If we treat $\mathbf{R}$ as a degree of freedom along with the unknown positions
 $\mathbf{x}$, we can unify this into an optimization over $\mathbf{x}$ and $\mathbf{R}$:
 
 $$
-\mathop{\text{min}}\_{\mathbf{x},\mathbf{R}\in SO(3)} \int\_{\Omega} \left\|{\nabla}\mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}}\right\|^{2} \;dA.
+\mathop{\text{min}}\_{\mathbf{x},\mathbf{R}\in SO(3)} \int\_{\Omega} \left\|{\nabla}\mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}}\right\|^{2} \, \, dA.
 $$
 
 
@@ -469,23 +469,23 @@ everywhere, or _as-rigid-as-possible_ (ARAP).
 > [deformation gradient](#deformationgradient) and the closest rotation:
 >
 $$
-\int_{\Omega} \left\|{\nabla}\mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}}\right\|^{2} \;dA
+\int_{\Omega} \left\|{\nabla}\mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}}\right\|^{2} \, \, dA
 $$
 
 $$
-\int_{\Omega} \left\|({\nabla}\mathbf{x} + \mathbf{I} - \mathbf{I}) - \mathbf{R} \mathbf{I} \right\|^{2} \;dA
+\int_{\Omega} \left\|({\nabla}\mathbf{x} + \mathbf{I} - \mathbf{I}) - \mathbf{R} \mathbf{I} \right\|^{2} \, \, dA
 $$
 
 $$
-\int_{\Omega} \left\|(\mathbf{I} + {\nabla}\mathbf{x} - {\nabla}\widetilde{x}) - \mathbf{R} \right\|^{2} \;dA
+\int_{\Omega} \left\|(\mathbf{I} + {\nabla}\mathbf{x} - {\nabla}\widetilde{x}) - \mathbf{R} \right\|^{2} \, \, dA
 $$
 
 $$
-\int_{\Omega} \left\|(\mathbf{I} + {\nabla}\mathbf{d}) - \mathbf{R} \right\|^{2} \;dA
+\int_{\Omega} \left\|(\mathbf{I} + {\nabla}\mathbf{d}) - \mathbf{R} \right\|^{2} \, \, dA
 $$
 
 $$
-\int_{\Omega} \left\|\mathbf{F} - \mathbf{R} \right\|^{2} \;dA
+\int_{\Omega} \left\|\mathbf{F} - \mathbf{R} \right\|^{2} \, \, dA
 $$
 
 >
@@ -506,7 +506,7 @@ in the mesh:
 
 $$
 \frac12  \int_{\Omega} 
-\|  {\nabla} \mathbf{x} - {\nabla}\widetilde{\mathbf{x}}\|^{2} \;dA = 
+\|  {\nabla} \mathbf{x} - {\nabla}\widetilde{\mathbf{x}}\|^{2} \, \, dA = 
 \frac12  
 \sum\limits_{f \in  F} 
 \sum\limits_{ ij \in  f} c_{ij} \| 
@@ -520,7 +520,7 @@ matrix $\mathbf{R}\_k$ to each vertex $k$ of the mesh and accounts for a third o
 energy integrated over incident triangles:
 
 $$
-\frac12  \int\_{\Omega} \|  {\nabla} \mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}}\|^{2} \;dA = 
+\frac12  \int\_{\Omega} \|  {\nabla} \mathbf{x} - \mathbf{R} {\nabla}\widetilde{\mathbf{x}}\|^{2} \, \, dA = 
 \frac{1}{6} \sum\limits\_{k=1}^n \sum\limits\_{ ij \in  F(k)} 
 c\_{ij} \|  (\mathbf{v}\_i-\mathbf{v}\_j) - \mathbf{R}\_k (\widetilde{\mathbf{v}}\_i-\widetilde{\mathbf{v}}\_j)\|^{2},
 $$
